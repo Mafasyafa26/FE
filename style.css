@@ -34,7 +34,7 @@
 .card img{
     width: 140px;
     border-radius: 50%;
-    position: relative;
+    overflow: hidden;
 }
 
 .card h2{
@@ -58,7 +58,7 @@
 }
 
 .card .links img:hover{
-    background: #0f0533;   
+    background: #0b0835;   
 }
 
 .btn {
