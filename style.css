@@ -33,7 +33,6 @@
 .card img{
     width: 140px;
     border-radius: 50%;
-    display: flex;
 }
 
 .card h2{
