@@ -6,10 +6,11 @@
 }
 .container{
     width: 100%;
-    min-height: 200px;
+    height: 100%;
     background-image: url(images/landscape-1619434_1280.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
