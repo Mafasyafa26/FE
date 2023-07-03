@@ -2,11 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , sans-serif, 'Sallim';
 }
+
+@font-face {
+    font-family: Qwigley;
+    src: url(./txt/Qwigley-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: normal;
+    src: url(./txt/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 500;
+    src: url(./txt/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 600;
+    src: url(./txt/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url(./txt/Poppins-Bold.ttf);
+}
+
 
 body{
     color: #ededed;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header{
@@ -24,17 +54,16 @@ body{
 
 .logo{
     position: relative;
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-family: 'Sallim';
-    src: url(txt/Sallim.ttf);
+    font-family: 'Qwigley';
 }
 
 .navbar a{
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
