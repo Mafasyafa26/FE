@@ -41,6 +41,65 @@
             <img src="./images/muff.png">
         </div>
     </section>
+
+    <!----------------about me------------------------->
+    <div id="about">
+        <div class="row">
+             <div class="about-col-1">
+                <img src="images/mii.jpg">
+             </div>
+             <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a graduate of vocational high school currently pursuing a Bachelor's degree in Computer Science. Currently, I work as a QA QC professional in software testing, with a focus on both manual and automated testing.  With a combination of my vocational high school background and ongoing university studies, I have built a strong foundation for advancing my career in the field of information technology.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web / App</li>
+                        <li><span>Front End Web Development</span><br> Web app Development</li>
+                        <li><span>QA/QC</span><br>Manual & Automation Testing Software</li>
+                        <li><span>Mobile App Development</span><br>Building Android Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>July 2021 - Aug 2021</span><br> UI/UX Mobile at Kano Solution</li>
+                        <li><span>Aug 2021 - Sept 2021</span><br> Mobile App Developer at Kano Solution</li>
+                        <li><span>Oct 2022 - March 2023</span><br> QA/QC Manual Testing in NexChief 2 at NexSoft</li>
+                        <li><span>March 2023 - July 2023</span><br>QA/QC Manual and Automation Testing in ND6 at NexSoft</li>
+                        <li><span>April 2023 - July 2023</span><br>QA/QC Finance Manual Testing in NexFin at NexSoft</li>
+                        <li><span>July 2023 - Nov 2023</span><br>QA/QC Manual Testing in Grolog at NexSoft</li>
+                        <li><span>Nov 2023 - Now</span><br>QA/QC Manual and Automation Testing in ND6 at NexSoft</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2016 - 2019</span><br>SMPN 5 Kota Probolinggo</li>
+                        <li><span>2019 - 2022</span><br>SMK TELKOM MALANG (RPL) </li>
+                        <li><span>2023 - Now</span><br>Cyber Asia University (S1 Computer Engineering)</li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
