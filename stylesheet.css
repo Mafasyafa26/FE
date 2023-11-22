@@ -40,6 +40,23 @@ body{
     background: #081b3d;
 }
 
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #b1d2f5;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #b1d2f5;
+}
+
 .header{
     position: relative;
     top: 0;
