@@ -95,12 +95,6 @@ body{
     color: #b8b7c9;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar a {
-        animation: none;
-    }
-}
-
 .home {
     position: relative;
     width: 100%;
